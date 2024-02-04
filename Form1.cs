@@ -113,7 +113,7 @@ namespace 마인크래프트도우미
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
+            Process.Start("https://github.com/ghrl1121/minecraft_helper");
         }
     }
 }
