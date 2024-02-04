@@ -58,7 +58,6 @@ namespace 마인크래프트도우미
                 string mesps = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\.minecraft\mods";
                 if (!Directory.Exists(mesps))
                 {
-                    File.SetAttributes(mesps, FileAttributes.Normal);
                     File.Create(mesps);
                 }
                 Process.Start(new ProcessStartInfo { FileName = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\.minecraft\mods", UseShellExecute = true });
